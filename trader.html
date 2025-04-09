@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Prismyte - Trading Made Easy</title>
+  <link rel="icon" href="Assets/Prismyte Light Mode Theme.png" type="image/png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="app-container">
+    <div class="sidebar">
+      <div class="sidebar-header">
+        <button class="new-chat-btn">
+          <i class="fas fa-plus"></i>
+          <span>New chat</span>
+        </button>
+        <button class="sidebar-toggle">
+          <i class="fas fa-bars"></i>
+        </button>
+      </div>
+      <div class="chat-history">
+        <div class="history-item active">
+          <i class="fas fa-message"></i>
+          <span>Getting started with trading</span>
+        </div>
+        <div class="history-item">
+          <i class="fas fa-message"></i>
+          <span>Market analysis request</span>
+        </div>
+        <div class="history-item">
+          <i class="fas fa-message"></i>
+          <span>Portfolio optimization</span>
+        </div>
+      </div>
+      <div class="sidebar-footer">
+        <div class="user-profile">
+          <div class="avatar">P</div>
+          <span>Pro Trader</span>
+        </div>
+        <a href="settings.html">
+        <button class="settings-btn">
+          <i class="fas fa-cog"></i>
+        </a>
+        </button>
+      </div>
+    </div>
+    <div class="main-content">
+      <div class="chat-container">
+        <div class="model-info">
+          <span>Prismyte Pro Version</span>
+          <div class="model-tag">Your Trading Solution</div>
+        </div>
+        <div class="chat-content" id="chat-content">
+          <div class="welcome-message">
+            <div class="welcome-logo">
+              <div class="logo-circle">P</div>
+            </div>
+            <h1>Prismyte - Trading Made Easy</h1>
+            <p>Ask me anything about stocks, crypto, forex, or trading strategies</p>
+            <div class="suggestions">
+              <div class="suggestion-card">
+                <i class="fas fa-chart-line"></i>
+                <span>Explain RSI indicator</span>
+              </div>
+              <div class="suggestion-card">
+                <i class="fas fa-coins"></i>
+                <span>Best crypto trading strategy</span>
+              </div>
+              <div class="suggestion-card">
+                <i class="fas fa-percentage"></i>
+                <span>How to calculate position size</span>
+              </div>
+              <div class="suggestion-card">
+                <i class="fas fa-balance-scale"></i>
+                <span>Market outlook for next week</span>
+              </div>
+            </div>
+          </div>
+          <div class="chat-message user-message">
+            <div class="message-content">
+              <div class="message-text">What's the best trading strategy for beginners?</div>
+              <div class="message-time">10:42 AM</div>
+            </div>
+            <div class="user-avatar">U</div>
+          </div>
+
+          <div class="chat-message bot-message">
+            <div class="bot-avatar">P</div>
+            <div class="message-content">
+              <div class="message-text">For beginners, I recommend starting with these key strategies:<br><br>
+              1. <strong>Trend Following</strong>: Identify and trade with the prevailing market trend<br>
+              2. <strong>Support & Resistance</strong>: Trade bounces off key price levels<br>
+              3. <strong>Breakout Trading</strong>: Capitalize on price movements beyond consolidation ranges<br><br>
+              Would you like me to elaborate on any of these?</div>
+              <div class="message-time">10:43 AM</div>
+            </div>
+          </div>
+        </div>
+        <div class="input-container">
+          <div class="input-box">
+            <textarea id="user-input" placeholder="Message Prismyte..." rows="1"></textarea>
+            <div class="input-actions">
+              <button id="send-button" class="send-button">
+                <i class="fas fa-paper-plane"></i>
+              </button>
+            </div>
+          </div>
+          <div class="disclaimer">
+            Prismyte may produce inaccurate information about trading, finance, or markets. Always verify critical information.
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="chatbot.js"></script>
+</body>
+</html>
