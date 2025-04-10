@@ -4,7 +4,6 @@
       
         function selectTheme(theme) {
           console.log(`${theme.charAt(0).toUpperCase() + theme.slice(1)} mode selected`);
-          // Optionally close the dropdown after selection
           document.getElementById("myDropdown").classList.remove("show");
 
         }
