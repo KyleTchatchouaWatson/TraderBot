@@ -5,6 +5,30 @@
   --box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
   --border-color: #a362ff;
 }
+.navbar {
+  background-color: var(--primary-color);
+  padding: 12px 24px;
+  display: flex;
+  justify-content: center; 
+  align-items: center;
+  gap: 24px;
+  box-shadow: var(--box-shadow);
+  border-bottom: 1px solid var(--border-color);
+}
+
+.navbar a {
+  color: white;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 16px;
+  padding: 8px 16px;
+  border-radius: var(--border-radius);
+  transition: background-color 0.2s ease;
+}
+
+.navbar a:hover {
+  background-color: var(--primary-dark);
+}
 * {
   margin: 0;
   padding: 0;
