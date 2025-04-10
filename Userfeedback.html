@@ -8,13 +8,16 @@
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
+  <nav class="navbar">
+    <a href="trader.html">Home</a>
+    <a href="settings.html">Settings</a>
+  </nav>
   <div class="contact-container">
     <form action="https://api.web3forms.com/submit" method="POST" enctype="multipart/form-data" class="contact-form">
       <div class="form-header">
         <h2>User Feedback</h2>
         <hr />
       </div>
-
       <input type="hidden" name="access_key" value="e6fd1fd6-39c8-4069-b6f8-203fdccd6c08" />
       <div class="form-group">
         <input type="text" name="name" required placeholder=" " />
@@ -30,7 +33,6 @@
         <textarea name="Message" rows="5" required placeholder=" "></textarea>
         <label>Your Issue</label>
       </div>
-
       <button type="submit">Submit</button>
     </form>
   </div>

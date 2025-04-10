@@ -7,17 +7,16 @@
   <link rel="icon" href="Assets/Prismyte Light Mode Theme.png" type="image/png">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <div class="app-container">
     <div class="sidebar">
       <div class="sidebar-header">
-        <button class="new-chat-btn">
+        <button class="new-chat-btn" onclick="handleNewChat()"> 
           <i class="fas fa-plus"></i>
-          <span>New chat</span>
-        </button>
+          <span>New Chat</span>
+      </button>
         <button class="sidebar-toggle">
           <i class="fas fa-bars"></i>
         </button>
@@ -38,14 +37,17 @@
       </div>
       <div class="sidebar-footer">
         <div class="user-profile">
-          <div class="avatar">P</div>
-          <span>Pro Trader</span>
+          <div class="avatar">T</div>
+          <span>Trader</span>
         </div>
-        <a href="settings.html">
-        <button class="settings-btn">
+        <button class="settings-btn" id="settingsBtn">
           <i class="fas fa-cog"></i>
-        </a>
-        </button>
+        </button>    
+        <div class="settings-popup hidden" id="settingsPopup">
+          <a href="Aboutus.html"><button class="popup-btn">About Us</button></a>
+          <a href="settings.html"><button class="popup-btn">Settings</button></a>
+          <a href="Userfeedback.html"><button class="popup-btn">User Feedback</button></a>
+        </div>            
       </div>
     </div>
     <div class="main-content">
@@ -87,7 +89,6 @@
             </div>
             <div class="user-avatar">U</div>
           </div>
-
           <div class="chat-message bot-message">
             <div class="bot-avatar">P</div>
             <div class="message-content">
@@ -116,7 +117,7 @@
       </div>
     </div>
   </div>
-
   <script src="chatbot.js"></script>
+  <script src="storage.js"></script>
 </body>
 </html>
