@@ -64,19 +64,19 @@
             <h1>Prismyte - Trading Made Easy</h1>
             <p>Ask me anything about stocks, crypto, forex, or trading strategies</p>
             <div class="suggestions">
-              <div class="suggestion-card">
+              <div class="suggestion-card" data-text="Explain RSI indicator">
                 <i class="fas fa-chart-line"></i>
                 <span>Explain RSI indicator</span>
               </div>
-              <div class="suggestion-card">
+              <div class="suggestion-card" data-text="Best crypto trading strategy">
                 <i class="fas fa-coins"></i>
                 <span>Best crypto trading strategy</span>
               </div>
               <div class="suggestion-card">
-                <i class="fas fa-percentage"></i>
+                <i class="fas fa-percentage" data-text="How to calculate position size"></i>
                 <span>How to calculate position size</span>
               </div>
-              <div class="suggestion-card">
+              <div class="suggestion-card" data-text="Market outlook for next week">
                 <i class="fas fa-balance-scale"></i>
                 <span>Market outlook for next week</span>
               </div>
@@ -119,5 +119,15 @@
   </div>
   <script src="chatbot.js"></script>
   <script src="storage.js"></script>
+  <script>
+    document.querySelectorAll('.suggestion-card').forEach(card => {
+  card.addEventListener('click', () => {
+    const suggestion = card.getAttribute('data-text') || card.innerText;
+    const input = document.getElementById('user-input');
+    input.value = suggestion;
+    document.getElementById("send-button").click();
+  });
+});
+  </script>
 </body>
 </html>
